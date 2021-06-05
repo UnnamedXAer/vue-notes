@@ -1,0 +1,44 @@
+{
+	"mappings": {
+		"properties": {
+			"author": {
+				"type": "text",
+				"store": true
+			},
+			"createdAt": {
+				"type": "date",
+				"store": true
+			},
+			"editedAt": {
+				"type": "date"
+			},
+			"title": {
+				"type": "text",
+				"store": true
+			},
+			"desc": {
+				"type": "text",
+				"store": true
+			},
+			"status": {
+				"type": "keyword",
+				"store": true
+			},
+			"pictures": {
+				"type": "nested",
+				"properties": {
+					"id": {
+						"type": "text"
+					},
+					"data": {
+						"type": "binary"
+					}
+				}
+			},
+			"categories": {
+				"type": "keyword",
+				"store": true
+			}
+		}
+	}
+}
